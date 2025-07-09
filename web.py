@@ -1,6 +1,16 @@
 import streamlit as st
 import functions
 
+st.markdown(
+    """
+    <style>
+    footer {visibility: hidden;}
+    .st-emotion-cache-z5fcl4 {visibility: hidden;}  /* hides source code */
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 todos = functions.get_todos()
 
 def add_todo():
