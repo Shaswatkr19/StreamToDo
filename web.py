@@ -40,3 +40,4 @@ st.text_input(
     label="New Todo", placeholder="Add new todo...",
                   label_visibility="collapsed", on_change=add_todo, key="new_todo")
 
+st.warning("⚠️ This is a shared demo — your tasks are visible to everyone.")
