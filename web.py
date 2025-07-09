@@ -5,7 +5,10 @@ st.markdown(
     """
     <style>
     footer {visibility: hidden;}
-    .st-emotion-cache-z5fcl4 {visibility: hidden;}  /* hides source code */
+    .st-emotion-cache-1dp5vir {visibility: hidden;}
+    .st-emotion-cache-6qob1r {visibility: hidden;}
+    header {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none;}
     </style>
     """,
     unsafe_allow_html=True
