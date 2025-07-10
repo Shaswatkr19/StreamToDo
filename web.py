@@ -5,19 +5,51 @@ import functions
 st.markdown(
     """
     <style>
-    /* ---------- FULL-WIDTH BACKGROUND IMAGE ---------- */
     .stApp {
-        /* black overlay, 60 % opacity */
         background: linear-gradient(
-                    rgba(0,0,0,0.6),     /* top – black @60 % */
-                    rgba(0,0,0,0.6)      /* bottom – black @60 % */
+                    rgba(0,0,0,0.6),
+                    rgba(0,0,0,0.6)
                   ),
-                  url("https://images.pexels.com/photos/3201468/pexels-photo-3201468.jpeg");
+                  url("https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1600&q=80");
 
-        background-size: cover;          /* always fill screen */
-        background-position: center;     /* keep subject centred */
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;    /* parallax-style stay-put */
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+st.markdown(
+    """
+    <style>
+    /* Input box style */
+    input {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: white;
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    /* Checkbox text color fix */
+    div.row-widget.stCheckbox > label {
+        color: white !important;
+    }
+
+    /* Title and subtitle styling */
+    .stTitle, .stMarkdown h1, .stMarkdown h2 {
+        color: white !important;
+    }
+
+    /* Warning style */
+    .stAlert {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid #aaa;
+        color: white;
     }
     </style>
     """,
