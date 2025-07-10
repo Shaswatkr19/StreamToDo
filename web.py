@@ -1,6 +1,29 @@
 import streamlit as st
 import functions
 
+
+st.markdown(
+    """
+    <style>
+    /* ---------- FULL-WIDTH BACKGROUND IMAGE ---------- */
+    .stApp {
+        /* black overlay, 60 % opacity */
+        background: linear-gradient(
+                    rgba(0,0,0,0.6),     /* top – black @60 % */
+                    rgba(0,0,0,0.6)      /* bottom – black @60 % */
+                  ),
+                  url("https://images.pexels.com/photos/3201468/pexels-photo-3201468.jpeg");
+
+        background-size: cover;          /* always fill screen */
+        background-position: center;     /* keep subject centred */
+        background-repeat: no-repeat;
+        background-attachment: fixed;    /* parallax-style stay-put */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown(
     """
     <style>
@@ -24,7 +47,8 @@ def add_todo():
 
 st.title("My ToDo App")
 st.subheader("This is my todo app.")
-st.write("This app is to increase your productivity.")
+st.write("This app is to increase your <b>productivity</b>.",
+         unsafe_allow_html=True)
 
 
 for index, todo in enumerate(todos):
